@@ -4,6 +4,7 @@ import pygame as pg
 import random
 import time
 
+
 WIDTH, HEIGHT = 1100, 650
 DELTA = {
         pg.K_UP:(0, -5),
@@ -55,9 +56,6 @@ def game_over(screen:pg.display):
     time.sleep(5)
 
 
-#def kasoku()
-
-
 def return_dic(mv:tuple, dic:dict) -> tuple:
     """
     引数：移動量と画像辞書
@@ -65,6 +63,7 @@ def return_dic(mv:tuple, dic:dict) -> tuple:
     """
     mv = tuple(mv)
     return dic[mv]
+
 
 def main():
     pg.display.set_caption("逃げろ！こうかとん")
