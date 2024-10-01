@@ -91,7 +91,7 @@ def main():
             kks_img.append(pg.transform.flip(kks_img[0], True, False))
             continue
         if k==7:
-            kks_img.append(pg.transform.flip(kks_img[3], False, True))
+            kks_img.append(pg.transform.flip(kks_img[3], True, True))
             continue
         kks_img.append(pg.transform.rotozoom(kk_img, 45*k-45, 1.0))
     kks_img = dict(zip(mvs_lis, kks_img))
